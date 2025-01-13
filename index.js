@@ -2,11 +2,11 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 const cors = require("cors");
 
-const express = require("express");
+const express = require("express"); // імпорт пакета express (фреймворк node js.)
 
-const checkAuth = require("./middleware/checkAuth");
+const checkAuth = require("./middleware/checkAuth"); // імпорт функції авторизації
 
-const app = express();
+const app = express(); // екземпляр express для налаштування запуску сервера
 
 app.use(cors()); // глобальна мідлвара для роботи з кросбраузерними запитами
 app.use(
