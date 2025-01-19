@@ -1,6 +1,6 @@
-const express = require("express");
+const express = require("express"); // імпорт пакета express (фреймворк node js.)
 
-const router = express.Router();
+const router = express.Router(); // імпорт пакета шляхів
 
 router.get("/", (req, res) => {
   res.send("Books");
